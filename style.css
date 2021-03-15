@@ -5,11 +5,14 @@ variables
 */
 
 :root{
- --primaryColor: #f15025;
+ --primaryColor: #cc561e;
  --mainBlack: #222;
  --mainWhite: #fff;
+ --mainText: #ffb26b;
  --offWhite: #f7f7f7; 
  --darkGrey: #afafaf;
+ --darkRed: #aa2b1d;
+ --MainOrange: #fb743e;
  --mainTransition: all 0.3s linear;
  --mainSpacing: 0.2rem;
 
@@ -86,25 +89,32 @@ Main Navbar
 */ 
 
 .main-navbar{
- background: var(--darkGrey);
+ background: var(--primaryColor);
  padding: 0 2rem;
 }
 
 .navbar-li{
  list-style: none;
+ transition: var(--mainTransition);
+}
+
+.navbar-li:hover{
+  background-color: var(--MainOrange);
+  padding-left: 0.5rem;
+  border-left: 0.25rem solid var(--darkRed);
 }
 
 .navbar-a{
  text-transform: capitalize;
  display: block;
  padding: 1rem 0;
- color: var(--primaryColor);
+ color: var(--mainText);
  letter-spacing: var(--mainSpacing);
  transition: var(--mainTransition);
 }
 
 .navbar-a:hover{
- color: var(--mainBlack);
+ color: #aa2b1d;
 }
 
 @media screen and (min-width:992px){
@@ -119,3 +129,43 @@ Main Navbar
   text-align: center;
  }
 }
+
+/* 
+=================
+hero
+=================
+*/ 
+
+.hero-header{
+  min-height: 100vh;
+  background: var(--MainOrange);
+  color: var(--darkRed);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner{
+  /* text-align: center; */
+}
+
+.hero-banner p{
+  width: 80%;
+  max-width: 560px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width:600px){
+  .hero-banner{
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (min-width:768px){
+  .hero-header{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5),var(--primaryColor), rgba(0, 0, 0, 0.1)), url(./images/image-2.jpeg) center/cover no-repeat fixed;
+
+    color: var(--MainOrange);
+  }
+}
+

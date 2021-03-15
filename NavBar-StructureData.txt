@@ -3,3 +3,9 @@ Main Navbar
 ************
 
 nav.main-navbar> ul.navbar-ul> (li.navbar-li>a.navbar-a)*4
+
+************
+hero
+************
+
+header.her-header> div.hero-banner> h1 + p
