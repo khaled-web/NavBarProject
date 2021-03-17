@@ -9,3 +9,15 @@ hero
 ************
 
 header.her-header> div.hero-banner> h1 + p
+
+
+************
+cards
+************
+
+section.cards>
+ 
+        div.title>h1 + 
+	div.cards-center> 4*article.card> img + (div.card-info> h3 + p) + (div.card-footer> (span>icon)*4)
+
+						    
