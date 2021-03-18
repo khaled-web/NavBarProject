@@ -17,7 +17,9 @@ cards
 
 section.cards>
  
-        div.title>h1 + 
+        div.title>h1 + p
 	div.cards-center> 4*article.card> img + (div.card-info> h3 + p) + (div.card-footer> (span>icon)*4)
 
-						    
+
+
+	    
