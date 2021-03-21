@@ -26,4 +26,23 @@ Tiles
 
 section.tiles> (div.tile> h1) + (div.tiles-center> 9* article.tile-01> img)
 
+
+************
+Layout
+************
+
+main.main> 
+
+	(header.header> h2) +
+
+	(nav.layout-navbar> ul.layout-ul> 4*(li.layout-li>a.layout-a)) +
+	
+	(section.content-p> p.content-p) + 
+
+	(section.sideBar>4*span>icon) +
+
+	(div.footer> p.footer-p)
+
+
+
 	    
