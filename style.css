@@ -427,3 +427,47 @@ Layout
     justify-items: center;
   }
 }
+
+@media screen and (min-width: 992px){
+  .main{
+    grid-template-columns: [start] 200px [col-1-end] 1fr [col-2-end] 50px [end];/* "start,col-1-end,col-2-end,end"...that's assuming names */
+    grid-template-rows: [start] auto [row-1-end] 1fr [row-2-end] auto [end];/* "start,row-1-end,row-2-end,end"...that's assuming names */
+  }
+  .header{
+    grid-column: start/end;
+    grid-row: start/row-1-end;
+  }
+
+  .layout-navbar{
+    grid-column: start/col-1-end;
+    grid-row: row-1-end/row-2-end;
+  }
+
+  .content{
+    grid-column: col-1-end/col-2-end;
+    grid-row: row-1-end/row-2-end;
+  }
+
+  .sideBar{
+    grid-column: col-2-end/end;
+    grid-row: row-1-end/row-2-end;;
+  }
+
+  .footer{
+    grid-column: start/end;
+    grid-row: row-2-end/end;
+  }
+
+  .layout-ul{
+    grid-template-columns: 1fr;
+    min-height: 100%;
+    align-items: center;
+  }
+
+  .sideBar{
+    grid-template-columns: 1fr;
+    min-height: 100%;
+    align-items: center;
+    background: var(--darkGrey);
+  }
+}

@@ -37,7 +37,7 @@ main.main>
 
 	(nav.layout-navbar> ul.layout-ul> 4*(li.layout-li>a.layout-a)) +
 	
-	(section.content-p> p.content-p) + 
+	(section.content> p.content-p) + 
 
 	(section.sideBar>4*span>icon) +
 
